@@ -1,0 +1,96 @@
+div.list_container {
+    color: white;
+    width: 50%;
+    margin: 2rem auto 2.8rem;
+    background-color: #474548;
+    border-radius: 1.5rem;
+    overflow: hidden;
+
+    h3 {
+        display: flex;
+        padding: 1.5rem 0 1rem;
+        font-size: 1.8rem;
+        justify-content: space-around;
+        border-bottom: 2px solid #9f9f9f;
+        color: #e1d5bc;
+        margin: 0;
+        font-style: italic;
+
+        span {
+            color: #ffc809;
+        }
+    }
+
+    p.no_todo {
+        color: #00fbf9;
+        font-size: 1.5rem;
+        padding: 1.2rem 0;
+        font-style: italic;
+        font-weight: bold;
+        letter-spacing: .1rem;
+        text-shadow:  0 0 0.9rem rgba(255, 0, 0, 0.2),
+                      0 0 0.9rem rgba(255, 0, 0, 0.5);
+        margin: 0;
+    }    
+
+    div.single_todo {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.2rem 2rem;
+        border-bottom: 1px solid #656060;
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+
+        p {
+            flex-grow: 1;
+            text-align: left;
+            word-break: break-all;
+            padding: 0 1.5rem 0 0;
+            margin: 1rem 0 0;
+            overflow: hidden;
+            color: #ffc809;
+            text-transform: capitalize;
+
+
+            input {
+                display: none;
+            }
+            
+
+            label {
+                font-size: 1.6rem;
+                font-style: italic;
+                float: left;
+                width: 93%;
+                padding: .3rem 0 .5rem 3.5rem;
+                background: url(../../images/checkbox.png) no-repeat;
+                transition: none;
+                
+            }
+
+
+            input.unchecked + label {
+                background-position: -42% -45px;
+            }
+            input.checked + label {
+                background-position: -42% -10px;
+            }
+        }
+
+        button {
+            color: red;
+            padding: 1.1rem 1.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+            background-color: rgba(0,0,0,.2);
+            border: none;
+            border-radius: .9rem;
+            max-height: 33px;
+            margin-top: .2rem;
+            cursor: pointer;
+        }
+    }
+}

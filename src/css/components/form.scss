@@ -1,0 +1,49 @@
+div.form_container {
+    margin: 1rem auto;
+    width: 50%;
+
+    form {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+
+        input {
+            flex-grow: 1;
+            padding: 1.5rem 1.2rem;
+            font-size: 1.4rem;
+            border: none;
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            border-right: none;
+            background-color: #3d355b;
+            color: white;
+        }
+
+        button {
+            padding: .8rem 1.7rem;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            background: #604ea1;
+            cursor: pointer;
+            border: none;
+            color: white;
+            letter-spacing: -.05rem;
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+        }
+    }
+
+    p.error_message {
+        color: #13093a;
+        font-size: 1.3rem;
+        background-color: red;
+        font-weight: bold;
+        padding: .8rem;
+        width: 75%;
+        margin: 1rem auto 1.3rem;
+        border-radius: 1rem;
+        border-bottom: 2px solid #483535;
+
+    }
+}
